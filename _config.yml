@@ -69,5 +69,5 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repop: https://github.com/windy0220/blog.github.io.git
-  branch: master
+  repo: git@git.oschina.net:windy0220/bigma.cc.git
+  branch: public
