@@ -1,7 +1,7 @@
 ---
 title: 使用码云的WebHooks实现网站的自动部署
 date: 2017-07-17 15:07:57
-tags: git, webhooks, 
+tags: [git, webhooks] 
 banner: /images/20170717.jpg
 thumbnail: /images/20170717.jpg
 ---
