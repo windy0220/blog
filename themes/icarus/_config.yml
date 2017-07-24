@@ -49,12 +49,12 @@ search:
 comment:
     disqus: # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
-    youyan: 1531102 # enter youyan uid here
+    youyan: #1531102 # enter youyan uid here
     facebook: # enter true to enable
     isso: # enter the domain name of your own comment isso server eg. comments.example.com
     changyan: # please fill in `appid` and `conf` to enable
-        appid:
-        conf:
+        appid: cysuslUTn
+        conf: 8a10424c899b8eb5f165293f93b2dfe2
     gitment:
         owner: #your github ID
         repo: #the repo to store comments
