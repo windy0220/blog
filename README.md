@@ -15,8 +15,8 @@ hexo deploy #部署网站
 配置新的环境
 ```bash
 git clone git@git.oschina.net:windy0220/bigma.cc.git
-npm install hexo
 npm install
-npm install hexo-deployer-git
+#npm install hexo
+#npm install hexo-deployer-git
 # 注意不需要hexo init
 ```
