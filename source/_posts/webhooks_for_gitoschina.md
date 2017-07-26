@@ -15,11 +15,11 @@ thumbnail: /images/20170717.jpg
 
 <!-- more -->
 
-1. 首先在码云上创建一个项目，项目中只放 README.md，因为我们只是先实验下这样就够了。
+1.首先在码云上创建一个项目，项目中只放 README.md，因为我们只是先实验下这样就够了。
 
-2. 将这个项目clone到本地及服务器
+2.将这个项目clone到本地及服务器
 
-3. 在服务器端创建一个pull.php文件，放到一个可以访问的网站目录，方便WebHooks进行post操作。php这里我们使用了shell_exec方法。在访问到该php文件后会执行pull.sh脚本。
+3.在服务器端创建一个pull.php文件，放到一个可以访问的网站目录，方便WebHooks进行post操作。php这里我们使用了shell_exec方法。在访问到该php文件后会执行pull.sh脚本。
 
 shell_exec 默认是关闭的，要从php.ini中开启
 ```bash
@@ -48,9 +48,9 @@ git pull #执行pull命令
 
 创建两个脚本后，要对脚本执行 chmod +x filename  为其添加执行的权限。
 
-4. 配置git公钥，公钥可以让你在服务器的本地仓库执行git pull的时候不需要输入密码。具体如何配置请参考[配置公钥](http://git.mydoc.io/?t=180845)
+4.配置git公钥，公钥可以让你在服务器的本地仓库执行git pull的时候不需要输入密码。具体如何配置请参考[配置公钥](http://git.mydoc.io/?t=180845)
 
-5. 为服务器端的PHP添加执行shell脚本的权限
+5.为服务器端的PHP添加执行shell脚本的权限
 ```bash
 vi /etc/sudoers
 #注释掉下面一行
@@ -61,8 +61,8 @@ www ALL=(ALL) NOPASSWD: ALL
 
 ```
 
-6. 使用 ```su www``` 切换到 www 用户执行 ```php pull.php``` 测试能否成功执行脚本，执行成功将返回 git pull的回馈信息。
+6.使用 ```su www``` 切换到 www 用户执行 ```php pull.php``` 测试能否成功执行脚本，执行成功将返回 git pull的回馈信息。
 
-7. 在码云的 WebHooks 中填入 pull.php 的url。本地执行git pull 看看网站目录是否自动更新了。
+7.在码云的 WebHooks 中填入 pull.php 的url。本地执行git pull 看看网站目录是否自动更新了。
 
 至此，使用 WebHooks 自动部署网站已配置完成。之后可以为pull.php加上密码验证提升安全性。
