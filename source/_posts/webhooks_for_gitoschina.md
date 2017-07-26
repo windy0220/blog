@@ -5,7 +5,7 @@ tags: [git, webhooks]
 banner: /images/20170717.jpg
 thumbnail: /images/20170717.jpg
 ---
-码云上提供了一个WebHooks功能，原理就是在本地push的时候码云的WebHooks会向远程服务器进行post请求，这个post还可以带上一个密码，防止被恶意post。
+码云上提供了一个WebHooks功能（其实github也有），原理就是在本地push的时候码云的WebHooks会向远程服务器进行post请求，这个post还可以带上一个密码，防止被恶意post。
 
 另外WebHooks还支持push, tag push, lssue 等共5种触发方式。
 
@@ -27,7 +27,7 @@ vim /usr/local/php/etc/php.ini
 ```
 搜索disable_function 将其中的 exec 和 shell_exec 删除。
 
-> 这里尽量使用绝对路径，我使用了PHP的shell_exec函数，当然还可以使用exec system等函数。
+这里尽量使用绝对路径，我使用了PHP的shell_exec函数，当然还可以使用exec system等函数。
 
 *pull.php*
 ```php
@@ -46,9 +46,9 @@ cd /data/wwwroot/bigma.cc #进入到需要git pull的网站目录
 git pull #执行pull命令
 ```
 
-创建两个脚本后，要对脚本执行 ```chmod +x filename``` 为其添加执行的权限。
+创建两个脚本后，要对脚本执行 chmod +x filename  为其添加执行的权限。
 
-4. 配置git公钥，公钥可以让你在服务器的本地仓库执行git pull的时候不需要输入密码。具体如何配置请参考。
+4. 配置git公钥，公钥可以让你在服务器的本地仓库执行git pull的时候不需要输入密码。具体如何配置请参考[配置公钥](http://git.mydoc.io/?t=180845)
 
 5. 为服务器端的PHP添加执行shell脚本的权限
 ```bash
