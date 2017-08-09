@@ -4,6 +4,7 @@ date: 2017-07-17 15:07:57
 tags: [git, webhooks] 
 banner: /images/20170717.jpg
 thumbnail: /images/20170717.jpg
+
 ---
 码云上提供了一个WebHooks功能（其实github也有），原理就是在本地push的时候码云的WebHooks会向远程服务器进行post请求，这个post还可以带上一个密码，防止被恶意post。
 
@@ -51,14 +52,13 @@ git pull #执行pull命令
 4.配置git公钥，公钥可以让你在服务器的本地仓库执行git pull的时候不需要输入密码。具体如何配置请参考[配置公钥](http://git.mydoc.io/?t=180845)
 
 5.为服务器端的PHP添加执行shell脚本的权限
+
 ```bash
 vi /etc/sudoers
 #注释掉下面一行
 #Defaults    requiretty
-
 #末尾加入 www为http 用户 此处也可指定某个脚本无需密码
 www ALL=(ALL) NOPASSWD: ALL
-
 ```
 
 6.使用 ```su www``` 切换到 www 用户执行 ```php pull.php``` 测试能否成功执行脚本，执行成功将返回 git pull的回馈信息。
