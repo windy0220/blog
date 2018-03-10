@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 我是大马
-subtitle: 这个一个偏计算机科学的博客
-description: 也许会有一些其他的东西混进来
+title: 大马的个人网站
+subtitle: 一个技术博客
+description: 
 author: 大马
 language: zh-CN
 timezone: Asia/Shanghai
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: icarus
+theme: apollo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

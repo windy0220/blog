@@ -6,9 +6,11 @@ banner: /images/banner_20170808.jpg
 thumbnail: /images/banner_20170808.jpg
 
 ---
-Laravel Homestead 是一个官方预封装的 Vagrant box，它为你提供了一个完美的开发环境，你无需在本地安装 PHP ，web 服务器，或其他服务软件。并且不用担心系统被搞乱！ Vagrant box 是完全一次性的。如果有什么地方出错了，你也可以在几分钟内销毁并重建 box ！
---以上内容摘抄自官方文档
+Laravel Homestead 是一个官方预封装的 Vagrant box，它为你提供了一个完美的开发环境，你无需在本地安装 PHP ，web 服务器，或其他服务软件。
 <!--more-->
+并且不用担心系统被搞乱！ Vagrant box 是完全一次性的。如果有什么地方出错了，你也可以在几分钟内销毁并重建 box ！
+--以上内容摘抄自官方文档
+
 
 ### 首先下载和安装VirtualBox和Vagrant
 
@@ -86,10 +88,11 @@ folders:
 **站点配置**
 map 为域名，当然这里我们不用去注册这个域名，只要在本地Hosts文件里映射下就好了。
 windows 下 打开 C:\Windows\System32\drivers\etc\ 将hosts 复制到桌面，
-打开添加一行```192.168.10.10 windy.app``` 保存，覆盖回去就好了。
+打开添加一行`192.168.10.10 windy.app` 保存，覆盖回去就好了。
 
 to 为站点在虚拟机上的路径
-这里要注意，如果你在Code下使用```laravel new blog``` 新建了一个 blog 的laravel项目那么站点路径应该如下
+这里要注意，如果你在Code下使用`laravel new blog` 新建了一个 blog 的laravel项目那么站点路径应该如下
+
 ```bash
 sites:
     - map: windy.app

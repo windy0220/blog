@@ -7,6 +7,7 @@ thumbnail: /images/20170717.jpg
 
 ---
 码云上提供了一个WebHooks功能（其实github也有），原理就是在本地push的时候码云的WebHooks会向远程服务器进行post请求，这个post还可以带上一个密码，防止被恶意post。
+<!-- more -->
 
 另外WebHooks还支持push, tag push, lssue 等共5种触发方式。
 
@@ -14,7 +15,7 @@ thumbnail: /images/20170717.jpg
 
 下面就一步一步来实现这个过程。
 
-<!-- more -->
+
 
 1.首先在码云上创建一个项目，项目中只放 README.md，因为我们只是先实验下这样就够了。
 
