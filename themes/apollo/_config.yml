@@ -1,0 +1,21 @@
+menu:
+    日志: /
+    归档: /archives/
+    微博: http://weibo.com/80yang
+    GitHub: https://github.com/windy0220
+    Rss: /atom.xml
+
+favicon: /favicon.png
+logo: /avater.png
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-65933410-1
+
+# Copyright Infomation
+startyear: 2015
