@@ -95,3 +95,16 @@ BOM
     - NaN == Nan 为 false ; 与NaN计算都为 NaN 如 NaN/10 为 NaN
     - isNaN() 尝试将参数转会数值再判断 “10” 可转换为 10； “blue” 不能转换为数值 ； true 可转换为 1；false 转换为 0
     - 数值转换 
+- String 类型
+	- 字符串由 双引号，或单引号表示。
+	- 字符字面量 \n \t \b \r \f \\ \' \" \xnn \unnnn
+	- 字符串定义后不可改变，只能销毁后重新赋值。导致某些旧浏览器拼接字符串效率低下。
+	- 数值、布尔值、对象和字符串都可以使用 toString(进制数，默认10) 转换为 字符串。null undefinde 没有这个方法
+	- String() 方法,值由 toString()方法则使用。null 返回 null undefinde 返回 undefinde
+- Object 类型
+	- 对象为一组数据和功能的集合
+	- 创建对象 `var o = new Object();` 可省略() 但不推荐
+	-  
+- 位操作符
+	- ~ 按位非 操作数的负值减1
+	- & 按位与 
