@@ -69,5 +69,5 @@ theme: apollo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@git.oschina.net:windy0220/bigma.cc.git
-  branch: public
+  repo: git@github.com:windy0220/windy0220.github.io.git
+  branch: master
