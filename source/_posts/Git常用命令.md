@@ -99,8 +99,12 @@ git branch -vv
 
 #### 返回之前的版本
 ```bash
-# HEAD为当前版本 上个版本为HEAD^ 上上个版本为HEAD^^ 也可以 HEAD~100
-git reset --hard HEAD 
+# HEAD为当前版本 上个版本为HEAD^ 上上个版本为HEAD^^ 上100个版本 HEAD~100 或使用 commit_id
+git reset --hard HEAD/commit_id 
+# 强制push到远程仓库 确保本地代码为最新且没有其他人在push 否则会丢失数据
+git push <remote> HEAD --force
+# --force可简写
+git push -f origin master
 ```
 #### 撤销操作
 ```bash
@@ -119,8 +123,10 @@ git reset --soft HEADID
 git rm filename
 # 强制从暂存区删除文件
 git rm -f filename
-# 从git仓库删除 但保留在本地磁盘
+# 从git仓库删除文件 但保留在本地磁盘
 git rm --cached README
+# 从git仓库删除目录 但保留在本地磁盘
+git rm -r --cached filePath
 # /删除log/目录下的一.log结尾的文件
 git rm log/\*.log
 # 删除末尾带~的文件
