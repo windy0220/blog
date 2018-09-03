@@ -6,8 +6,33 @@ tags: Git
 ---
 Git 一些常用命令，备忘录
 <!-- more -->
-#### 设置全局信息
+
+#### 生成SSH key
+
 ```bash
+# 这个指令会要求你提供一个位置和文件名去存放键值对和密码，你可以点击3次Enter键去使用默认值
+ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
+
+# 输出公钥 也可以判断本地是否有公钥
+cat ~/.ssh/id_rsa.pub
+
+# 复制公钥到剪切板，如果不起作用使用上面的命令复制即可
+clip < ~/.ssh/id_rsa.pub              #windows
+pbcopy < ~/.ssh/id_rsa.pub            #mac
+xclip -sel clip < ~/.ssh/id_rsa.pub   #linux
+
+# 测试链接
+ssh -T git@gitee.com   #码云
+ssh -T git@github.com  #github
+# 首次使用需要确认并添加主机到本机SSH可信列表
+# Hi XXX! You've successfully authenticated, but Gitee.com does not provide shell access. 表示添加成功
+
+```
+
+#### 设置全局信息
+
+```bash
+# 这里的名字会出现在提交记录里，团队合作是最好写真实的名字，方便找人
 git config --global user.name "name"
 git config --global user.email "ex@mail.com"
 ```
