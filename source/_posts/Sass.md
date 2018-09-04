@@ -20,7 +20,7 @@ https://rubyinstaller.org/downloads/
 gem sources --remove https://rubygems.org/
 
 # 2.添加国内淘宝源
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 
 # 3.打印是否替换成功
 gem sources -l
