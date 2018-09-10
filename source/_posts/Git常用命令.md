@@ -163,7 +163,28 @@ git rm \*~
 git mv file_from file_to
 ```
 
+#### stash 操作
+
+使用场景：如果正在进行功能开发，做到一半，这时候需要在别的分支上修改bug又不想提交，可以使用stash将当前的修改的内容隐藏起来。
+
+```bash
+# 将修改的内容隐藏
+git stash
+# 显示隐藏的列表
+git stash list
+# 恢复最后隐藏的那些内容并在saash列表中删除
+git stash pop
+
+# 恢复stash 只有一个时可以省略 stash@{0}
+git stash apply stash@{0}
+# 删除stash
+git stash drop stash@{1}
+```
+
+
+
 #### 忽略文件
+
 https://github.com/github/gitignore
 
 #### 一些会出现的问题
