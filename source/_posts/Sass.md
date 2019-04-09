@@ -11,7 +11,7 @@ https://rubyinstaller.org/downloads/
 选择 WITHOUT DEVKIT X64 版本
 
 #### 安装 Ruby
-点击安装文件 全部默认项安装，安装完成后跳出一个命令行窗口，直接回车即可。
+点击安装文件 全部默认项安装，安装完成后跳出一个命令行窗口，ctrl + C 结束即可。
 在命令行下输入 ruby -v 检查是否安装成功。
 
 #### 更换 gem 源
@@ -74,13 +74,15 @@ compass watch
 - 编译时提示 `Line 123: Invalid GBK character "\xE4"` 
 
   原因是有中文字符的注释，或是引用的 scss 文件中有中文 
+  
   **解决办法：**
-  打开 `C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\sass-3.5.6\lib\sass\engine.rb` 文件
+  打开  `C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\sass-3.5.6\lib\sass\engine.rb` 文件
 ```bash
 # 在所有的 `require` 之后添加一句 
-`Encoding.default_external = Encoding.find('utf-8')`
+Encoding.default_external = Encoding.find('utf-8')
 
 ```
+注意：路径中的 sass-3.5.6 可能有多个版本 必须都添加才可以
 
 
 #### 官方文档
