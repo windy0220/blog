@@ -18,6 +18,7 @@ Study
 6.本地Host 文件添加一行 laravel.app 127.0.0.1
 7.网站目录下的 laravel\.env.example 文件复制改名 .env
 > tips: windows下是无法创建改.env文件的，可以在vscode中创建，一定要创建啊，要不然打开会报500 错误
+
 8.将以下内容添加到 composer.json 文件中 请参考 https://pkg.phpcomposer.com/ 这样就能使用中国的composer镜像了。
 
 ```bash
