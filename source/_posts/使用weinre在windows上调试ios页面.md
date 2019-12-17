@@ -3,7 +3,6 @@ title:  使用weinre在windows上调试ios页面
 date: 2019-12-17 11:54:53
 tags: [weinre, windows, ios, 调试, debug]
 ---
-# 使用weinre 在windows上调试ios页面
 
 想调试ios页面却没有mac电脑，ios-webkit-debug-proxy 又有各种问题链接不上。可以试下 weinre！  不挑系统，都能调试，只要在要调试的脚本中添加一段js就好。对于在线的页面也可以使用抓包工具注入js脚本调试。
 <!-- more -->
