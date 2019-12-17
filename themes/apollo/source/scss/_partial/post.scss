@@ -64,8 +64,9 @@
     }
     img {
         display: block;
-        max-width: 100%;
+        max-width: 90%;
         margin: 1em auto;
+        box-shadow: 0 0 10px rgba(19, 63, 135, 0.5);
     }
     & > table,
     & > figure.highlight {
