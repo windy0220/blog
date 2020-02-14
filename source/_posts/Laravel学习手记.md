@@ -37,7 +37,7 @@ Study
 ```bash
 $ php artisan key:generate
 ```
-11.在 Nginx 配置文件中加入 
+11.在 Nginx 配置文件中加入  不加会导致请求api的时候404
 ```bash
 location / {
     try_files $uri $uri/ /index.php?$query_string;
