@@ -6,7 +6,9 @@ tags: [VSCode, debug, nuxt]
 由于Nuxt是在服务端获取API接口数据的，所有无法在浏览器中直接调试。
 
 下面介绍使用VSCode调试Nuxt.js的服务端接口
+
 <!-- more -->
+
 点击 VSCode 侧栏上的 debug 工具，选择添加配置文件
 
 ![添加配置文件](/images/Snipaste_2020-05-01_00-05-06.jpg)
