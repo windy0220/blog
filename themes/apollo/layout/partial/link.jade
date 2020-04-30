@@ -1,0 +1,9 @@
+.link
+    .link-title LINKS
+    each value, key in theme.link
+        li.link-list-item
+            - var re = /^(http|https):\/\/*/gi;
+            - var tar = re.test(value) ? "_blank" : "_self"
+            - var act = !re.test(value) && "/"+page.current_url === value
+            a.link-list-link(class={active: act} href=url_for(value) target=tar)
+                != key.toUpperCase()
