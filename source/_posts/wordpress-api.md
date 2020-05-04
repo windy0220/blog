@@ -64,37 +64,37 @@ http://ex.wordpress.com/wp-json/wp/v2/posts?filter[author_name]=jinyun
 http://ex.wordpress.com/wp-json/wp/v2/posts?filter[orderby]=rand
 ```
 
-# 标签
+#### 标签
 ```
 http://ex.wordpress.com/wp-json/wp/v2/tags
 http://ex.wordpress.com/wp-json/wp/v2/tags/3
 ```
 
-# 媒体
+#### 媒体
 ```
 http://ex.wordpress.com/wp-json/wp/v2/media
 http://ex.wordpress.com/wp-json/wp/v2/media/3
 ```
 
-# 页面
+#### 页面
 ```
 http://ex.wordpress.com/wp-json/wp/v2/pages
 http://ex.wordpress.com/wp-json/wp/v2/pages/3
 ```
 
-# 类型
+#### 类型
 ```
 http://ex.wordpress.com/wp-json/wp/v2/types
 http://ex.wordpress.com/wp-json/wp/v2/types/post
 ```
 
-# 评论
+#### 评论
 ```
 http://ex.wordpress.com/wp-json/wp/v2/comments
 http://ex.wordpress.com/wp-json/wp/v2/comments/2
 ```
 
-# 用户
+#### 用户
 ```
 http://ex.wordpress.com/wp-json/wp/v2/users
 http://ex.wordpress.com/wp-json/wp/v2/users/2
