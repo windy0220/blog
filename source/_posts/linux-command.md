@@ -17,6 +17,18 @@ tar zxvf filename.tar
 chown -R www.www *
 ```
 
+#### iptables
+```
+# 查看 iptables
+iptables -nvL
+
+# 添加规则 这里添加了一个 3306 端口
+iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
+
+# 保存
+service iptables save
+```
+
 #### mysql数据库
 ```bash
 # 登录数据库
