@@ -1,9 +1,16 @@
+<!--
+ * @Author: bimga
+ * @Date: 2020-06-07 23:28:48
+ * @LastEditTime: 2020-06-08 23:24:37
+ * @FilePate: Do not edit
+--> 
 ---
 layout: centos
 title: Centos 安装 NodeJs
 date: 2020-06-07 23:28:48
 tags: [Centos, NodeJs]
 ---
+
 
 # 获取下载链接
 
