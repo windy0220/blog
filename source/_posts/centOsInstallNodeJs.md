@@ -38,39 +38,9 @@ npx
 # 安装pm2
 npm i -g pm2
 
-创建配置文件 server.json
-```
-{
-  "name": "your-project-name",
-  "script": "build/main.js",
-  "cwd": "./",
-  "watch": [
-  ],
-  "ignore_watch": [
-      "node_modules",
-      "logs"
-  ],
-  "watch_options": {
-      "followSymlinks": false
-  },
-  "error_file": "./logs/app-err.log",
-  "out_file": "./logs/app-out.log",
-  "env": {
-      "NODE_ENV": "production"
-  }
-}
-```
-
-package.json添加pm2 scripts
-```
- "scripts": {
-    "pm2": "cross-env pm2 start server.json"
- }
-```
-
 运行
 ```
-npm run pm2
+ pm2 start npm --name "package.json中的应用名称" -- run start
 ```
 
 #### pm2 常用命令
@@ -91,10 +61,30 @@ npm run pm2
 |重新启动进程/应用 | pm2 restart www|
 |重新启动所有进程/应用 | pm2 restart all|
 
+# nginx 反向代理设置
+```
+server {
+  listen 80;
+  server_name 域名1 域名2;
+  location / {
+        root /data/wwwroot/路径; # 前端文件目录
+        proxy_pass http://127.0.0.1:3000;
+  }
+}
+```
+
 #### 错误
 
 1. -bash: pm2: command not found
 替换 node-v12.18.0-linux-x64 为你的node 版本号
 ```
 ln -s /root/node-v12.18.0-linux-x64/lib/node_modules/pm2/bin/pm2 /usr/local/bin
+```
+
+2. 执行 npm i失败
+安装node-sass时会出现，Permissions Errors
+
+使用二进制安装的Node 会有权限问题。
+```
+chown -R root:root node-v8.10.0-linux-x64
 ```
