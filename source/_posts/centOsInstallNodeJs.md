@@ -73,6 +73,18 @@ server {
 }
 ```
 
+# pm2 开机启动
+```bash
+# 启动项目
+pm2 start npm --name "package.json中的应用名称" -- run start
+# 保存当前进程状态
+pm2 save
+# 生成开机自启动服务
+pm2 startup
+# 启用开机自启
+systemctl enable pm2-root
+```
+
 #### 错误
 
 1. -bash: pm2: command not found
