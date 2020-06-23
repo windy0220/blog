@@ -149,3 +149,8 @@ flamingo_subject: "[the-subject-field]"
 `skip_mail: on` 为跳过邮件发送
 启用插件后，可在目录中找到Flamingo 点击进入收件箱
 数据保存在 `wp_postmeta` 表中
+
+
+#### aliyun-cdn-helper
+刷新阿里云的cdn服务
+https://github.com/0xJacky/aliyun-cdn-helper
