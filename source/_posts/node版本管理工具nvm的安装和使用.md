@@ -1,12 +1,11 @@
 ---
-layout: windows
-title: node版本管理工具nvm的安装和使用
+title: windows node版本管理工具nvm的安装和使用
 date: 2021-05-28 00:09:38
 tags: [node, npm, nvm, windows, 版本管理]
 ---
-# windows node版本管理工具nvm的安装和使用
 
 在实际的前端开发工作中，我们经常要维护一些老项目使用的是较旧版本的node和npm，新的项目又要使用比较新的node和npm，这时候就要祭出node版本工具了，上次说过 Linux上的node版本工具n，这次就来看看windows上的node版本管理工具nvm如何安装和使用。
+<!-- more -->
 
 #### 下载安装
 
