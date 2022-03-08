@@ -1,6 +1,8 @@
 
 #### 配置新的环境
 
+**使用node 12 要不然生成的文件是空的**
+
 ```bash
 npm install -g hexo-cli
 git clone git@git.oschina.net:windy0220/bigma.cc.git
