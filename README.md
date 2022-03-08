@@ -32,4 +32,12 @@ hexo deploy #部署网站
 - master分支是源码
 - public 分支是部署文件
 
-当执行 `hexo deploy` 的时候自动推送 public 分支到git平台，同过平台的webhooks访问服务器上的 pull.php 文件，该文件执行一个 pull.sh 脚本文件，该脚本会在，项目目录里执行 `git pull` 操作
+当执行 `hexo deploy` 的时候自动推送 public 分支到git平台，https://windy.pub https://windy0220.github.io
+
+jenkins在配置低的服务器上总挂，现在手动上传 public 下的文件到主站的服务器上
+
+<del>同过平台的webhooks访问服务器上的 pull.php 文件，该文件执行一个 pull.sh 脚本文件，该脚本会在，项目目录里执行 `git pull` 操作</del> 
+
+
+
+
